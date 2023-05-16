@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Users</title>
+  </head>
+  <body>
+    <h1>All Users</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Doc ID</th>
+          <th>Name</th>
+          <th>Number</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(function(user) { %>
+          <tr>
+            <td><%= user.docID %></td>
+            <td><%= user.name %></td>
+            <td><%= user.number %></td>
+            <td><%= user.email %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>
